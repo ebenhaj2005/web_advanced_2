@@ -12,12 +12,30 @@ body{
 
     color: black;
 
+    font-size: 20px;
    
-
+margin-bottom: 200px;
 }
 .header h3:hover{
 
     color: white;
 cursor: pointer;
 
+}
+
+#logo_image{
+    border-radius: 20px;
+}
+#maps{
+  margin-left: 250px;
+  display: flex;
+    flex-direction: row;
+    margin-right: 150px;
+}
+
+#text-maps{
+    margin-left: 50px;
+  font-size: 20px;
+    margin-right: 150px;
+    text-align: justify;
 }
