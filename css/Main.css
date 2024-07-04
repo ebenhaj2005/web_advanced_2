@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(236, 236, 56);
+}
+
+
+
+.header{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+
+    color: black;
+
+   
+
+}
+.header h3:hover{
+
+    color: white;
+cursor: pointer;
+
+}
