@@ -9,12 +9,20 @@ body{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-
+ text-decoration: none;
     color: black;
 
     font-size: 20px;
    
+    
+   
 margin-bottom: 200px;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-right: 50px;
 }
 .header h3:hover{
 
@@ -31,11 +39,36 @@ cursor: pointer;
   display: flex;
     flex-direction: row;
     margin-right: 150px;
+    margin-bottom: 200px;
 }
 
 #text-maps{
-    margin-left: 50px;
+  
   font-size: 20px;
     margin-right: 150px;
     text-align: justify;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 200px;
+ 
+}
+
+#text-gps{
+    display: flex;
+    flex-direction:column;
+      margin-left: 50px;
+
+}
+.gpsimg1{
+    border-radius: 30px;
+    margin-left: 5px;
+}
+
+.gpsimg1:hover{
+    cursor: pointer;
+    
 }
