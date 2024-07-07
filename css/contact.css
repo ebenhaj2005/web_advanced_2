@@ -1,0 +1,64 @@
+#contacttitle{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    background-color: black;
+    padding: 60px;
+    color: white ;
+}
+body{
+    background-color: rgb(236, 236, 56);
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+text-align: center;
+    margin-bottom: 200px;
+    color:white ;
+    background-color: black;
+}
+#openingsuren{
+    font-size: 20px;
+    margin-bottom: 50px;
+  text-align: center;
+  color:white;
+  background-color: black;
+}
+
+#tabeluur{
+   display: flex;
+   justify-content: center;
+  color: white ;
+}
+.header{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+ text-decoration: none;
+    color: black;
+padding: 20px;
+    font-size: 20px;
+   
+    background-color: black;
+   
+margin-bottom: 200px;
+overflow: hidden;
+border-radius: 100px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.header h3:hover{
+
+    color: yellow;
+cursor: pointer;
+
+}
