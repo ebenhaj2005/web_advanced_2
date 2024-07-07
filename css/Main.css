@@ -13,25 +13,32 @@ body{
     justify-content:space-evenly;
  text-decoration: none;
     color: black;
-padding: 20px;
+padding:40px;
+    font-size: 20px;
+   
+    background-color: black;
+margin-top: 50px;
     font-size: 20px;
    
     background-color: black;
    
 margin-bottom: 200px;
 overflow: hidden;
+border-radius: 100px;
 }
 .header a{
     text-decoration: none;
     color: white;
     font-size: 20px;
     margin-right: 50px;
+   
 }
 .header h3:hover{
 
     color: white;
 cursor: pointer;
-
+color: rgb(236, 236, 56);
+ scale: 1.5;
 }
 
 #logo_image{
@@ -42,16 +49,17 @@ cursor: pointer;
 #text-maps{
   
   font-size: 20px;
-    margin-right: 150px;
+  
     text-align: justify;
-    
+    padding-right: 40px;
 }
 .picture-text{
-    margin-left: 250px;
+    margin-left: 0px;
     display: flex;
       flex-direction: row;
+      padding-left: 40px;
   
-      margin-bottom: 200px;
+      margin-bottom: 100px;
   }
 
 .banner{
@@ -86,4 +94,29 @@ cursor: pointer;
     text-transform: uppercase;
 margin-bottom: 50px;
 text-decoration: underline;
+}
+
+#locationcontainer{
+    color: white;
+    background-color: black;
+ padding: 40px;
+    border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 200px;
+}
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+   padding-top: 40px;
+   padding-bottom: 40px;
+    width: 100%;
+    overflow: hidden;
+
 }
