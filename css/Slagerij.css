@@ -14,13 +14,13 @@ body{
     justify-content:space-evenly;
  text-decoration: none;
     color: black;
-
-padding: 20px;
+margin-top: 50px;
+    padding:40px;
     font-size: 20px;
    
     background-color: rgb(0, 0, 0);
    
-margin-bottom: 200px;
+margin-bottom: 350px;
 overflow: hidden;
 border-radius: 100px;
 }
@@ -45,7 +45,7 @@ scale: 1.5;
     display: flex;
     justify-content: center;
 
-    margin-bottom: 200px;
+    margin-bottom: 350px;
  
 }
 
@@ -54,26 +54,36 @@ scale: 1.5;
     border-radius: t;
 }
 
-.picutre-text{
-    margin-left: 250px;
+.picture-text{
+   
     display: flex;
       flex-direction: row;
-  
+     margin: 200px;
+  background-color: black;
+  padding: 50px;
       margin-bottom: 200px;
+      border-radius: 40px;
+      margin-bottom: 500px;
   }
 
   #text{
     font-size: 20px;
-        margin-right: 150px;
-        text-align: justify;
+      
+        text-align: center;
         margin-left: 150px;
         margin-top: 100px;
   }
-#footer{
+  #footer{
     background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 0px;
-    padding: 1.0rem;
+   padding-top: 40px;
+   padding-bottom: 40px;
+    width: 100%;
+    overflow: hidden;
+    
+
 }
