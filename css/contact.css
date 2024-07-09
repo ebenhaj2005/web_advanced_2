@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(236, 236, 56);
+    background-color: rgb(219, 213, 213);
 }
 
 #info{   padding: 10px;
@@ -11,8 +11,12 @@ body{
     color:white ;
     background-color: black;
     border-radius: 60px;
- 
+
     overflow: hidden;
+    padding:100px;
+   padding-bottom: 200px;
+
+    font-size: 25px;
 }
 #openingsuren{
     font-size: 20px;
@@ -22,6 +26,8 @@ body{
   background-color: black;
   border-radius: 60px;
   padding: 10px;
+  
+
 overflow: hidden;
 }
 #logo_image{
@@ -32,6 +38,7 @@ overflow: hidden;
    justify-content: center;
   color: white ;
   padding: 10px;
+  
     overflow: hidden;
 }
 .header{
@@ -66,7 +73,6 @@ cursor: pointer;
 scale: 1.5;
 
 }
-
 #footer{
     background-color: black;
     color: white;
@@ -78,6 +84,51 @@ scale: 1.5;
    padding-bottom: 40px;
     width: 100%;
     overflow: hidden;
+    
 
 }
 
+#contactform{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 150px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 200px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+text-align: center;
+  width: 50%;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding: 250px;
+    padding-bottom: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  background-image:url(../images/Bill_market_logo.jpg)  ;
+    color: black;
+    border-radius: 20px;
+
+    font-size: 35px;
+    font-style: italic;
+
+
+}
+
+#infopicture{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-bottom: 150px;
+    padding: auto   ;
+
+}
