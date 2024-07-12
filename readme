@@ -1,0 +1,20 @@
+Elementen selecteren : Main.js => lijn 1 
+Elementen manipuleren : Main.js => lijn 8 
+Event aan een element koppelen: Main.js => Lijn 7 
+Formulier valideren: Contact.html => Lijn 92
+Gebruiken van een constante
+Gebruiken van template literals
+Destructuring
+Spread & Rest operator
+Iteration over een array
+Arrow function
+Callback function
+Promise
+Consumer methods
+Async & Await
+Self executing function
+Fetch om data op te halen
+JSON manipuleren en weergeven
+Basis CSS Animatie
+Gebruiken van een flexbox of CSS grid : Main.css => Lijn 11
+Gebruik van LocalStorage : Main.js => Lijn 11 

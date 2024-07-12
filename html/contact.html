@@ -17,54 +17,63 @@
     />
 
     <a href="Main.html"><h3>Home</h3></a>
-    <a href="Slagerij.html"><h3>Slagerij</h3></a>
-    <a href="contact.html"><h3>Contact</h3></a>
-    <a href=""><h3>Over ons</h3></a>
+    <a href="Slagerij.html"><h3 id="Slagerijnaam">Slagerij</h3></a>
+    <a href="contact.html"><h3 >Contact</h3></a>
+    <a href=""><h3 id="Onsnaam">Over ons</h3></a>
+ 
+  </div>
+  <div id="taal">
+    <button class="kiestaal" id="Nederlands"><p >Nederlands</p></button>
+    <button class="kiestaal" id="Frans"><p >Français</p></button>
+
   </div>
 
-<div id="infopicture">
-<section id="info">
-<h2>Tel supermarkt : </h2>
+
+<div id="infopicture"> 
+  
+<section id="info"> 
+<h1 id="title">Neem contact op</h1>   
+<h2 id="telsupermarkt">Telefoonnummer supermarkt : </h2>
 <h1>+32 483 30 11 55</h1>
 <br>
-<h2>Tel slagerij : </h2>
+<h2 id="telslagerij">Telefoonnummer slagerij : </h2>
 <h1>+32 488 03 19 24</h1>
 
 </section> 
-<img src="../images/Capture d’écran 2024-07-10 002756.png" alt="">
+
 </div>
 
 
 
 <section id="openingsuren">
-<h1>Openingsuren</h1>
+<h1 id="titeltabel">Openingsuren</h1>
 <table id="tabeluur">
     <tr>
-        <th>Maandag</th>
+        <th id="Maandag">Maandag</th>
         <td>09:00 - 20:00</td>
     </tr>
     <tr>
-        <th>Dinsdag</th>
+        <th id="Dinsdag">Dinsdag</th>
         <td>09:00 - 20:00</td>
     </tr>
     <tr>
-        <th>Woensdag</th>
+        <th id="Woensdag">Woensdag</th>
         <td>08:00 - 20:00</td>
     </tr>
     <tr>
-        <th>Donderdag</th>
+        <th id="Donderdag">Donderdag</th>
         <td>09:00 - 20:00</td>
     </tr>
     <tr>
-        <th>Vrijdag</th>
+        <th id="Vrijdag">Vrijdag</th>
         <td>09:00 - 20:00</td>
     </tr>
     <tr>
-        <th>Zaterdag</th>
+        <th id="Zaterdag">Zaterdag</th>
         <td>09:00 - 20:00</td>
     </tr>
     <tr>
-        <th>Zondag</th>
+        <th id="Zondag">Zondag</th>
         <td>09:00 - 20:00</td>
     </tr>
 </table>
@@ -76,18 +85,18 @@
 
 
 <section id="contactform">
-    <h1>Contacteer ons</h1>
-    <p>Heeft u een vraag of opmerking? Aarzel niet om ons te contacteren via onderstaand formulier.</p>
+    <h1 id="contactus">Contacteer ons</h1>
+    <p id="vraag">Heeft u een vraag of opmerking? Aarzel niet om ons te contacteren via onderstaand formulier.</p>
     <br>
   
     <form id="form" action="mailto: ebenhaj2005@gmail.com" method="post" >
-        <label for="name">Naam:</label>
+        <label for="name" id="Naam">Naam:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-        <label for="message">Bericht:</label>
+        <label for="message" id="Bericht">Bericht:</label>
         <textarea id="message" name="message" required></textarea>
-        <input type="submit" value="Verzenden">
+        <input type="submit" id="input" value="Verzenden">
     </form>
 
 </section>
@@ -101,6 +110,6 @@
   </div>
   </footer> 
 </body>
-<script src="../javascript/All.js"></script>
+
 <script src="../javascript/Contact.js"></script>
 </html>
