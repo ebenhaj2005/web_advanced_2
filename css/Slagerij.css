@@ -5,6 +5,8 @@ body{
 
 
 
+
+
 .header{
     margin-top:0px;
     margin-left: 0px;
@@ -31,7 +33,8 @@ border-radius: 100px;
     margin-right: 50px;
 }
 .header h3:hover{
-
+    transition-property: color;
+    transition-duration: 0.5s;
     color: red;
 cursor: pointer;
 scale: 1.5;
@@ -42,12 +45,22 @@ scale: 1.5;
 }
 
 .banner{
+  
     display: flex;
     justify-content: center;
 
     margin-bottom: 350px;
  
+ 
 }
+.banner:hover{
+  
+    transform:rotate(1turn);
+transition-duration: 1000ms;
+ 
+}
+
+
 
 #bouzzimg{
     border-radius: 100px;
@@ -67,7 +80,7 @@ scale: 1.5;
   }
 
   #text{
-    font-size: 20px;
+    font-size: 30px;
       
         text-align: center;
         margin-left: 150px;
@@ -94,4 +107,11 @@ scale: 1.5;
     justify-content:flex-end;
    margin-right: 50px;
    margin-bottom: 200px;
+}
+
+.app:hover{
+    transform: scale(1.2);
+    transition-duration: 1000ms;
+    cursor: pointer;
+
 }

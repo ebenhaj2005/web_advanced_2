@@ -70,7 +70,8 @@ border-radius: 100px;
     margin-right: 50px;
 }
 .header h3:hover{
-
+    transition-property: color;
+    transition-duration: 1000ms;
     color: yellow;
 cursor: pointer;
 scale: 1.5;
@@ -148,4 +149,10 @@ text-align: center;
     justify-content:flex-end;
    margin-right: 50px;
    margin-bottom: 200px;
+}
+.app:hover{
+    transform: scale(1.2);
+    transition-duration: 1000ms;
+    cursor: pointer;
+
 }
