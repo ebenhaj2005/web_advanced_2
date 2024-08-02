@@ -75,7 +75,6 @@ color: rgb(236, 236, 56);
 .banner:hover{
     transform: scale(1.2);
     transition-duration: 1000ms;
-    tran
 }
 
 #text-gps{
