@@ -19,3 +19,11 @@ frans.addEventListener('click', function() {
    slagerijheader.innerHTML = "Boucherie";
     onsheader.innerHTML = "A propos de nous";
 });
+
+window.onload = function () {
+    if (localStorage.getItem("language") === "nederlands") {
+      nederlands.click();
+    } else if (localStorage.getItem("language") === "Français") {
+      frans.click();
+    }
+  }

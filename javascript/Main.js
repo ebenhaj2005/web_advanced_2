@@ -32,4 +32,10 @@ function ophalenData() {
    
   };
 
-  alert("Welkom " + localStorage.getItem("gebruikerNaam") + " bij Bill Market!");
+window.onload = function () {
+  if (localStorage.getItem("language") === "nederlands") {
+    nederlands.click();
+  } else if (localStorage.getItem("language") === "Français") {
+    frans.click();
+  }
+}

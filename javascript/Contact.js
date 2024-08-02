@@ -66,3 +66,11 @@ Naam.innerHTML = "Nom";
 Bericht.innerHTML = "Message";
 inputnaam.value = "envoyer";
 });
+
+window.onload = function () {
+    if (localStorage.getItem("language") === "nederlands") {
+      nederlands.click();
+    } else if (localStorage.getItem("language") === "Français") {
+      frans.click();
+    }
+  }
