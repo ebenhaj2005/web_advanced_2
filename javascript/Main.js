@@ -32,10 +32,15 @@ function ophalenData() {
    
   };
 
-window.onload = function () {
-  if (localStorage.getItem("language") === "nederlands") {
+  const kiestaalNL = "nederlands";
+  const kiestaalFR = "Français";
+
+ function kiestaal() {
+  if (localStorage.getItem("language") === kiestaalNL) {
     nederlands.click();
-  } else if (localStorage.getItem("language") === "Français") {
+  } else if (localStorage.getItem("language") === kiestaalFR) {
     frans.click();
   }
 }
+
+window.addEventListener('DOMContentLoaded', kiestaal);
