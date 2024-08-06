@@ -24,21 +24,25 @@ const Postcode = document.getElementById("postcode-input");
 const form = document.getElementById("form");
 const error = document.getElementById("error");
 
+
+
 form.addEventListener("submit", (e) => {
+  const msg = ["Gelieve een geldige postcode in te vullen", "Gelieve uw postcode in te vullen om op de website van Bill Market te komen", "Gelieve uw naam in te vullen om op de website van Bill Market te komen"];
+  const[a,b,c] = msg; // Destructuring
   let message = [];
   e.preventDefault();
   let naam2 = Naam.value;
   if (naam2 === "" || naam2 === null) {
     message.push(
-      "Gelieve uw naam in te vullen om op de website van Bill Market te komen"
+      c
     );
   }
   if (Postcode.value.length < 4 && Postcode.value.length != 0) {
-    message.push("Gelieve een geldige postcode in te vullen");
+    message.push(a);
   }
   if (Postcode.value === "" || Postcode.value === null) {
     message.push(
-      "Gelieve uw postcode in te vullen om op de website van Bill Market te komen"
+     b
     );
   }
 
@@ -49,3 +53,6 @@ form.addEventListener("submit", (e) => {
     window.location.href = "../html/Main.html";
   }
 });
+
+localStorage.setItem("gebruikerNaam", Naam.value);
+localStorage.setItem("gebruikerPostcode", Postcode.value);

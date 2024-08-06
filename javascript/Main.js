@@ -5,8 +5,7 @@ let slagerijheader = document.getElementById("Slagerijnaam");
 let onsheader = document.getElementById("Onsnaam");
 
 nederlands.addEventListener("click", function () {
-  text.innerHTML = 
-   `Bill Market is een populaire supermarktketen die strategisch gelegen is in het hart van de gemeente. De locatie van Bill Market bevindt zich aan de drukke Hoofdstraat. 
+  text.innerHTML = `Bill Market is een populaire supermarktketen die strategisch gelegen is in het hart van de gemeente. De locatie van Bill Market bevindt zich aan de drukke Hoofdstraat. 
     Deze centrale ligging maakt de supermarkt gemakkelijk toegankelijk voor zowel de lokale bewoners als de pendelaars die dagelijks de gemeente bezoeken. Dankzij de nabijheid van openbaar vervoer, zoals bussen en treinen, is het eenvoudig om Bill Market te bereiken zonder auto.
     Bovendien is er voldoende parkeergelegenheid rondom de supermarkt voor klanten die met de auto komen.
     De omgeving van Bill Market is levendig en bruist van activiteit. Het gebied is omgeven door diverse winkels, restaurants en cafés, waardoor klanten hun boodschappen kunnen combineren met een gezellig dagje uit.
@@ -29,18 +28,14 @@ frans.addEventListener("click", function () {
 
 function ophalenData() {
   localStorage.getItem("gebruikerNaam");
-   
-  };
+}
 
-  const kiestaalNL = "nederlands";
-  const kiestaalFR = "Français";
-
- function kiestaal() {
-  if (localStorage.getItem("language") === kiestaalNL) {
+function kiestaal() {
+  if (localStorage.getItem("language") === "nederlands") {
     nederlands.click();
-  } else if (localStorage.getItem("language") === kiestaalFR) {
+  } else if (localStorage.getItem("language") === "Français") {
     frans.click();
   }
 }
 
-window.addEventListener('DOMContentLoaded', kiestaal);
+window.addEventListener("DOMContentLoaded", kiestaal);
