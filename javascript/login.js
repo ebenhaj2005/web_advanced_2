@@ -1,10 +1,4 @@
-function kiestaal() {
-  if (localStorage.getItem("language") === kiestaalNL) {
-    nederlands.click();
-  } else if (localStorage.getItem("language") === kiestaalFR) {
-    frans.click();
-  }
-}
+
 
 const kiestaalNL = "nederlands";
 const kiestaalFR = "Français";
@@ -54,5 +48,3 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-localStorage.setItem("gebruikerNaam", Naam.value);
-localStorage.setItem("gebruikerPostcode", Postcode.value);

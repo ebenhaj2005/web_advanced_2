@@ -26,9 +26,7 @@ frans.addEventListener("click", function () {
     "Bill Market est une chaîne de supermarchés populaire stratégiquement située au cœur de la commune. L'emplacement de Bill Market se trouve sur la rue principale animée. Cette position centrale rend le supermarché facilement accessible aux habitants locaux ainsi qu'aux navetteurs qui visitent quotidiennement la commune. Grâce à la proximité des transports en commun, tels que les bus et les trains, il est facile de se rendre à Bill Market sans voiture. De plus, il y a suffisamment de places de parking autour du supermarché pour les clients qui viennent en voiture. Les environs de Bill Market sont vivants et animés. La zone est entourée de divers magasins, restaurants et cafés, permettant aux clients de combiner leurs courses avec une journée agréable. Le supermarché lui-même est spacieux et offre une large gamme de produits, des légumes et fruits frais aux charcuteries de haute qualité et aux plats préparés. Le personnel amical est toujours prêt à aider et s'assure que faire ses courses chez Bill Market est une expérience agréable. En bref, l'emplacement de Bill Market sur la rue principale en fait une destination idéale pour quiconque recherche commodité, qualité et un large choix de produits. Que vous souhaitiez faire vos courses rapidement après le travail ou que vous cherchiez une expérience de magasinage complète, Bill Market est l'endroit idéal.";
 });
 
-function ophalenData() {
-  localStorage.getItem("gebruikerNaam");
-}
+
 
 function kiestaal() {
   if (localStorage.getItem("language") === "nederlands") {

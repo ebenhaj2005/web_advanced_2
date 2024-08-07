@@ -4,23 +4,27 @@ body{
 }
 
 #info{   
-    padding: 10px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
 margin-right: auto;
-margin-left: 10%;
+margin-left: auto;
    text-align:center;
-    margin-bottom: 200px;
-    color:black ;
-    
+    border-radius: 80px;
+    color:white;
+    background-color: black;
 
-
+margin-bottom: 100px;
     overflow: hidden;
   
-   padding-bottom: 200px;
+   
 
     font-size: 15px;
+    transform: scale(1.5);
+    transition-duration: 2000ms;
+    transition-timing-function: ease-in-out;
 }
+
 #openingsuren{
     font-size: 20px;
     margin-bottom: 50px;
@@ -29,6 +33,8 @@ margin-left: 10%;
   background-color: black;
   border-radius: 60px;
   padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
   
 
 overflow: hidden;
@@ -41,8 +47,11 @@ overflow: hidden;
    justify-content: center;
   color: white ;
   padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
   
-    overflow: hidden;
+  
+    
 }
 .header{
   
