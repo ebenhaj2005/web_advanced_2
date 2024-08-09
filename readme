@@ -1,3 +1,8 @@
+BILL MARKET WEBSITE
+
+Welcome to the Bill Market website. This website has been made to help clients to find all the information that they need about Bill Market
+
+
 Elementen selecteren : Main.js => lijn 1 
 Elementen manipuleren : Main.js => lijn 8 
 Event aan een element koppelen: Main.js => Lijn 7 
@@ -9,7 +14,7 @@ Spread & Rest operator
 Iteration over een array
 Arrow function
 Callback function
-Promise
+Promise 
 Consumer methods
 Async & Await
 Self executing function

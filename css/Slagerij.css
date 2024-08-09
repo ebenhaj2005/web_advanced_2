@@ -55,7 +55,7 @@ scale: 1.5;
 }
 .banner:hover{
   
-    transform:rotate(1turn);
+    transform:scale(1.2);
 transition-duration: 1000ms;
  
 }
