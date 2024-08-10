@@ -74,3 +74,13 @@ font-size: 20px;
     margin-right: auto;
     padding: 10px;
 }
+#infoknop{
+   
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+ display: block;
+ justify-content: center;
+
+}

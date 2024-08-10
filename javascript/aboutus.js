@@ -79,6 +79,14 @@ fetchopeningsuren().then(openingsuren => {toonuren(openingsuren);})
 
 
 
+fetch('https://icanhazdadjoke.com/j/jVKBQS0o4h')
+let infoknop = document.getElementById("infoknop");
+
+infoknop.addEventListener("click", function () {
+  document.getElementById('titleinfo').innerText = "Over Ons";
+
+
+})
 
 
 
