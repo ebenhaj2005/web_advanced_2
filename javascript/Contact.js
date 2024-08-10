@@ -30,13 +30,7 @@ nederlands.addEventListener('click', function() {
 telnummersuper.innerHTML = "Telefoonnummer supermarkt :";
 telnummerslagerij.innerHTML = "Telefoonnummer slagerij :";
 titeluur.innerHTML = "Openingsuren";
-zondag.innerHTML = "Zondag";
-maandag.innerHTML = "Maandag";
-dinsdag.innerHTML = "Dinsdag";
-woensdag.innerHTML = "Woensdag";
-donderdag.innerHTML = "Donderdag";
-vrijdag.innerHTML = "Vrijdag";
-zaterdag.innerHTML = "Zaterdag";
+
 contactus.innerHTML = "Contacteer ons";
 vraag.innerHTML = "Heeft u een vraag? Aarzel niet om ons te contacteren!";
 Naam.innerHTML = "Naam";
