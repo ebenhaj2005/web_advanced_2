@@ -30,19 +30,31 @@ function kiestaal() {
 
 window.addEventListener("DOMContentLoaded", kiestaal);
 
-const openingsuren = [
+
+
+
+
+
+function fetchopeningsuren(){
+  return new Promise((resolve,reject)=> 
+     setTimeout(() => {const openingsuren = [
   {
     dag: "Maandag",
     Uur: "9:00 - 20:00",
   },
   { dag: "Dinsdag", Uur: "9:00 - 20:00" },
-  { dag: "Woensdag", Uur: "9:00 - 20:00" },
+  { dag: "Woensdag", Uur: "Gesloten" },
   { dag: "Donderdag", Uur: "9:00 - 20:00" },
   { dag: "Vrijdag", Uur: "9:00 - 20:00" },
   { dag: "Zaterdag", Uur: "9:00 - 20:00" },
   { dag: "Zondag", Uur: "9:00 - 20:00" },
 ];
+    resolve(openingsuren);
+  }, 500));
+};
 
+
+function toonuren(openingsuren){
 let body = document.getElementById("openingsuren2");
 
 openingsuren.forEach(item => {
@@ -57,3 +69,23 @@ openingsuren.forEach(item => {
   body.appendChild(rij)
 
 });
+
+
+
+}
+fetchopeningsuren().then(openingsuren => {toonuren(openingsuren);})
+.catch(error =>    {  console.error("Failed to fetch opening hours:", error)});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
