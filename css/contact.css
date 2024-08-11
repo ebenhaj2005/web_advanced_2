@@ -20,7 +20,7 @@ margin-bottom: 100px;
    
 
     font-size: 15px;
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition-duration: 2000ms;
     transition-timing-function: ease-in-out;
 }
@@ -112,7 +112,7 @@ scale: 1.5;
     margin-left: 250px;
     margin-right: 250px;
     margin-top: 200px;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
