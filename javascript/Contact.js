@@ -7,20 +7,14 @@ let text = document.getElementById('title');
 let telnummersuper = document.getElementById('telsupermarkt');
 let telnummerslagerij = document.getElementById('telslagerij');
 let titeluur = document.getElementById('titeltabel');
-let zondag = document.getElementById('Zondag');
-let maandag = document.getElementById('Maandag');
-let dinsdag = document.getElementById('Dinsdag');
-let woensdag = document.getElementById('Woensdag');
-let donderdag = document.getElementById('Donderdag');
-let vrijdag = document.getElementById('Vrijdag');
-let zaterdag = document.getElementById('Zaterdag');
+let titelcontact = document.getElementById('titlecontact');
 let contactus = document.getElementById('contactus');
 let vraag = document.getElementById('vraag');
 let Naam = document.getElementById('Naam');
 let Bericht = document.getElementById('Bericht');
 let inputnaam = document.getElementById('input');
 
-
+let textcontact = document.getElementById('textcontact');
 
 nederlands.addEventListener('click', function() {
     slagerijheader.innerHTML = "Slagerij";
@@ -47,18 +41,12 @@ frans.addEventListener('click', function() {
     telnummersuper.innerHTML = "Numéro de téléphone supermarché :";
     telnummerslagerij.innerHTML = "Numéro de téléphone boucherie :";
     titeluur.innerHTML = "Heures d'ouverture";
-    zondag.innerHTML = "Dimanche";
-    maandag.innerHTML = "Lundi";
-    dinsdag.innerHTML = "Mardi";
-    woensdag.innerHTML = "Mercredi";
-    donderdag.innerHTML = "Jeudi";
-    vrijdag.innerHTML = "Vendredi";
-    zaterdag.innerHTML = "Samedi";
+titelcontact.innerHTML = "Contactez-nous 24h/24";
     contactus.innerHTML = "Contactez-nous";
     vraag.innerHTML = "Vous avez une question? N'hésitez pas à nous contacter!";
-Naam.innerHTML = "Nom";
-Bericht.innerHTML = "Message";
-inputnaam.value = "envoyer";
+
+
+
 });
 
 const kiestaalNL = "nederlands";

@@ -5,17 +5,24 @@ body{
 
 #info{   
     padding: 60px;
-    display: flex;
+    display: flex;      
     flex-direction: column;
-margin-right: auto;
-margin-left: auto;
+padding: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: black;
+    color: white;
+    border-radius: 60px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 150px;	
    text-align:center;
-    border-radius: 80px;
+ 
     color:white;
     background-color: black;
+margin: 0%;
 
-margin-bottom: 100px;
-    overflow: hidden;
+
   
    
 
@@ -25,34 +32,11 @@ margin-bottom: 100px;
     transition-timing-function: ease-in-out;
 }
 
-#openingsuren{
-    font-size: 20px;
-    margin-bottom: 50px;
-  text-align: center;
-  color:white;
-  background-color: black;
-  border-radius: 60px;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  
 
-overflow: hidden;
-}
 #logo_image{
     border-radius: 20px;
 }
-#tabeluur{
-   display: flex;
-   justify-content: center;
-  color: white ;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  
-  
-    
-}
+
 .header{
   
     margin-left: 0px;
@@ -164,4 +148,10 @@ text-align: center;
     transition-duration: 1000ms;
     cursor: pointer;
 
+}
+
+#contactinfo{
+    background-color: black;
+    color: white;
+    text-align: center;
 }
