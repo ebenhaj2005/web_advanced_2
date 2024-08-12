@@ -7,43 +7,41 @@ let text = document.getElementById('title');
 let telnummersuper = document.getElementById('telsupermarkt');
 let telnummerslagerij = document.getElementById('telslagerij');
 let titeluur = document.getElementById('titeltabel');
-let titelcontact = document.getElementById('titlecontact');
-let contactus = document.getElementById('contactus');
-let vraag = document.getElementById('vraag');
-let Naam = document.getElementById('Naam');
-let Bericht = document.getElementById('Bericht');
-let inputnaam = document.getElementById('input');
+let contact24 = document.getElementById('contactus24');
+
+
 
 let textcontact = document.getElementById('textcontact');
 
 nederlands.addEventListener('click', function() {
-    slagerijheader.innerHTML = "Slagerij";
-    onsheader.innerHTML = "Over ons";
+    slagerijheader.innerText = "Slagerij";
+    onsheader.innerText = "Over ons";
     localStorage.setItem('language', 'nederlands'); 
-    text.innerHTML = "Neem contact op met ons";
-telnummersuper.innerHTML = "Telefoonnummer supermarkt :";
-telnummerslagerij.innerHTML = "Telefoonnummer slagerij :";
-titeluur.innerHTML = "Openingsuren";
 
-contactus.innerHTML = "Contacteer ons";
-vraag.innerHTML = "Heeft u een vraag? Aarzel niet om ons te contacteren!";
-Naam.innerHTML = "Naam";
-Bericht.innerHTML = "Bericht";
-inputnaam.value = "verzend";
-    
+telnummersuper.innerText = "Telefoonnummer supermarkt :";
+telnummerslagerij.innerText = "Telefoonnummer slagerij :";
+text.innerText = "Neem contact op"
+contact24.innerText = "Contacteer ons 24u/24"
+
+
+
+textcontact.innerText = "Bij Bill Market staan we erop om u een uitstekende klantenservice te bieden. Daarom zijn we 24/7 beschikbaar om al uw vragen of zorgen te beantwoorden. Aarzel niet om ons op elk moment per e-mail te contacteren via het volgende adres: info@billmarket.com.  We staan klaar om u te helpen!";
+
 });
 
 frans.addEventListener('click', function() {
     localStorage.setItem('language', 'Français');
-   slagerijheader.innerHTML = "Boucherie";
-    onsheader.innerHTML = "A propos de nous";
-    text.innerHTML = "Contactez-nous";
-    telnummersuper.innerHTML = "Numéro de téléphone supermarché :";
-    telnummerslagerij.innerHTML = "Numéro de téléphone boucherie :";
-    titeluur.innerHTML = "Heures d'ouverture";
-titelcontact.innerHTML = "Contactez-nous 24h/24";
-    contactus.innerHTML = "Contactez-nous";
-    vraag.innerHTML = "Vous avez une question? N'hésitez pas à nous contacter!";
+   slagerijheader.innerText = "Boucherie";
+    onsheader.innerText = "A propos de nous";
+   
+    telnummersuper.innerText = "Numéro de téléphone supermarché :";
+    telnummerslagerij.innerText = "Numéro de téléphone boucherie :";
+text.innerText = "Contactez nous"
+contact24.innerText = "Contactez-nous 24h/24";
+
+  
+    textcontact.innerText = "Chez Bill Market, nous mettons un point d'honneur à vous offrir un service client de qualité. C'est pourquoi nous sommes disponibles 24h/24 pour répondre à toutes vos questions ou préoccupations. N'hésitez pas à nous contacter à tout moment par email à l'adresse suivante : info@billmarket.com.       Nous sommes là pour vous aider !";
+   
 
 
 

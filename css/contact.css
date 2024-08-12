@@ -85,47 +85,14 @@ scale: 1.5;
 
 }
 
-#contactform{
-    text-align: center;
-    background-color: black;
-    color: white;
-    border-radius: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 150px;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-top: 200px;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
-#form{
-    display: flex;
-    flex-direction: column;
-text-align: center;
-  width: 50%;
-    margin-top: 100px;
-    margin-bottom: 200px;
-    padding: 250px;
-    padding-bottom: 300px;
-    margin-right: auto;
-    margin-left: auto;
-  background-image:url(../images/Bill_market_logo.jpg)  ;
-    color: black;
-    border-radius: 20px;
-
-    font-size: 35px;
-    font-style: italic;
-
-
-}
 
 #infopicture{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    margin-bottom: 150px;
+    margin-top: 200px;
+    margin-bottom: 300px;
     padding: auto   ;
 
 }
@@ -151,7 +118,32 @@ text-align: center;
 }
 
 #contactinfo{
-    background-color: black;
-    color: white;
+    background-image: url(../images/9be2a5c00776269a4583797adcebc1d3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+   
     text-align: center;
+    margin-bottom: 150px;
+    padding: 60px;
+    border-radius: 60px;
+}
+
+#textcontact{
+    padding: 50px;
+    font-family:fantasy ;
+   margin-left: 150px;
+   margin-right: 150px;
+    font-size: 40px; 
+    font-weight:bolder;
+    color: whitesmoke;
+    margin-bottom: 100px;
+    letter-spacing: 2px;
+}
+
+#contactus24{
+    margin-bottom: 100px;
+    font-size: 60px;
+    letter-spacing: 4px;
+    color: whitesmoke;
 }
