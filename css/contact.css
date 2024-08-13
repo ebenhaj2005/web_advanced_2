@@ -10,7 +10,7 @@ body{
 padding: 100px;
     margin-left: 20%;
     margin-right: 20%;
-    background-color: black;
+ background-color: black;
     color: white;
     border-radius: 60px;
     font-size: 20px;
@@ -118,11 +118,10 @@ scale: 1.5;
 }
 
 #contactinfo{
-    background-image: url(../images/9be2a5c00776269a4583797adcebc1d3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: black;
-   
+background-color: black;
+  
+   margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     margin-bottom: 150px;
     padding: 60px;
@@ -134,7 +133,7 @@ scale: 1.5;
     font-family:fantasy ;
    margin-left: 150px;
    margin-right: 150px;
-    font-size: 40px; 
+    font-size: 30px; 
     font-weight:bolder;
     color: whitesmoke;
     margin-bottom: 100px;
@@ -143,7 +142,7 @@ scale: 1.5;
 
 #contactus24{
     margin-bottom: 100px;
-    font-size: 60px;
+    font-size: 40px;
     letter-spacing: 4px;
     color: whitesmoke;
 }

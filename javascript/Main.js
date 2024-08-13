@@ -29,13 +29,13 @@ locatie.innerHTML = "Emplacement";
 });
 
 
-
-function kiestaal() {
+(function kiestaal() {
   if (localStorage.getItem("language") === "nederlands") {
     nederlands.click();
   } else if (localStorage.getItem("language") === "Français") {
     frans.click();
   }
-}
+  console.log('taal gekozen')
+})();
 
-window.addEventListener("DOMContentLoaded", kiestaal);
+

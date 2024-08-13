@@ -21,15 +21,16 @@ frans.addEventListener("click", function () {
   document.getElementById('grapbutton').innerText = "Appuyez ici pour une blague"
 });
 
-function kiestaal() {
+(function kiestaal() {
   if (localStorage.getItem("language") === "nederlands") {
     nederlands.click();
   } else if (localStorage.getItem("language") === "Français") {
     frans.click();
   }
-}
+  console.log('taal gekozen')
+})();
 
-window.addEventListener("DOMContentLoaded", kiestaal);
+
 
 function fetchopeningsuren() {
   return new Promise((resolve, reject) =>

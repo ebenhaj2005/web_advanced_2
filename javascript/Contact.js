@@ -50,12 +50,12 @@ contact24.innerText = "Contactez-nous 24h/24";
 const kiestaalNL = "nederlands";
   const kiestaalFR = "Français";
 
- function kiestaal() {
-  if (localStorage.getItem("language") === kiestaalNL) {
-    nederlands.click();
-  } else if (localStorage.getItem("language") === kiestaalFR) {
-    frans.click();
-  }
-}
+  (function kiestaal() {
+    if (localStorage.getItem("language") === "nederlands") {
+      nederlands.click();
+    } else if (localStorage.getItem("language") === "Français") {
+      frans.click();
+    }
+    console.log('taal gekozen')
+  })();
 
-window.addEventListener('DOMContentLoaded', kiestaal);
