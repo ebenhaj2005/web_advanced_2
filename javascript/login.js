@@ -3,14 +3,7 @@
 const kiestaalNL = "nederlands";
 const kiestaalFR = "Français";
 
-(function kiestaal() {
-  if (localStorage.getItem("language") === "nederlands") {
-    nederlands.click();
-  } else if (localStorage.getItem("language") === "Français") {
-    frans.click();
-  }
-  console.log('taal gekozen')
-})();
+
 
 
 
