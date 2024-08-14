@@ -5,47 +5,21 @@ let slagerijheader = document.getElementById("Slagerijnaam");
 let onsheader = document.getElementById("Onsnaam");
 let titeltabel = document.getElementById("titeltabel");
 
-nederlands.addEventListener("click", function () {
-  slagerijheader.innerHTML = "Slagerij";
-  onsheader.innerHTML = "Over ons";
-  titeltabel.innerHTML = "Openingsuren";
-  localStorage.setItem("language", "nederlands");
-  document.getElementById('grapbutton').innerText = "Druk hier voor een grap"
-});
-
-frans.addEventListener("click", function () {
-  slagerijheader.innerHTML = "Boucherie";
-  onsheader.innerHTML = "A propos de nous";
-  titeltabel.innerHTML = "Heures d'ouverture";
-  localStorage.setItem("language", "Français");
-  document.getElementById('grapbutton').innerText = "Appuyez ici pour une blague"
-});
-
-(function kiestaal() {
-  if (localStorage.getItem("language") === "nederlands") {
-    nederlands.click();
-  } else if (localStorage.getItem("language") === "Français") {
-    frans.click();
-  }
-  console.log('taal gekozen')
-})();
-
-
 
 function fetchopeningsuren() {
   return new Promise((resolve, reject) =>
     setTimeout(() => {
-      const openingsuren = [
+      let openingsuren = [
         {
-          dag: "Maandag",
+          dag: "Monday",
           Uur: "9:00 - 20:00",
         },
-        { dag: "Dinsdag", Uur: "9:00 - 20:00" },
-        { dag: "Woensdag", Uur: "Gesloten" },
-        { dag: "Donderdag", Uur: "9:00 - 20:00" },
-        { dag: "Vrijdag", Uur: "9:00 - 20:00" },
-        { dag: "Zaterdag", Uur: "9:00 - 20:00" },
-        { dag: "Zondag", Uur: "9:00 - 20:00" },
+        { dag: "Tuesday", Uur: "9:00 - 20:00" },
+        { dag: "Wednesday", Uur: "Closed" },
+        { dag: "Thursday", Uur: "9:00 - 20:00" },
+        { dag: "Friday", Uur: "9:00 - 20:00" },
+        { dag: "Saturday", Uur: "9:00 - 20:00" },
+        { dag: "Sunday", Uur: "9:00 - 20:00" },
       ];
       resolve(openingsuren);
     }, 0)
@@ -74,6 +48,36 @@ fetchopeningsuren()
   .catch((error) => {
     console.error("Failed to fetch opening hours:", error);
   });
+nederlands.addEventListener("click", function () {
+  slagerijheader.innerHTML = "Slagerij";
+  onsheader.innerHTML = "Over ons";
+  titeltabel.innerHTML = "Openingsuren";
+  localStorage.setItem("language", "nederlands");
+  document.getElementById('grapbutton').innerText = "Druk hier voor een grap"
+
+ 
+});
+
+frans.addEventListener("click", function () {
+  slagerijheader.innerHTML = "Boucherie";
+  onsheader.innerHTML = "A propos de nous";
+  titeltabel.innerHTML = "Heures d'ouverture";
+  localStorage.setItem("language", "Français");
+  document.getElementById('grapbutton').innerText = "Appuyez ici pour une blague"
+});
+
+(function kiestaal() {
+  if (localStorage.getItem("language") === "nederlands") {
+    nederlands.click();
+  } else if (localStorage.getItem("language") === "Français") {
+    frans.click();
+  }
+  console.log('taal gekozen')
+})();
+
+
+
+
 
 let infoknop = document.getElementById("infoknop");
 

@@ -4,6 +4,7 @@ let text = document.getElementById("text-maps");
 let slagerijheader = document.getElementById("Slagerijnaam");
 let onsheader = document.getElementById("Onsnaam");
 let locatie = document.getElementById("loc");
+let cattitle = document.getElementById("producttitle");
 
 nederlands.addEventListener("click", function () {
   text.innerHTML = `Bill Market is een populaire supermarktketen die strategisch gelegen is in het hart van de gemeente. De locatie van Bill Market bevindt zich aan de drukke Hoofdstraat. 
@@ -17,6 +18,7 @@ nederlands.addEventListener("click", function () {
   onsheader.innerHTML = "Over ons";
   localStorage.setItem("language", "nederlands");
   locatie.innerHTML = "Locatie";
+  cattitle.innerHTML = "Onze Categorieën:";
 });
 
 frans.addEventListener("click", function () {
@@ -26,6 +28,7 @@ frans.addEventListener("click", function () {
 locatie.innerHTML = "Emplacement";
   text.innerHTML =
     "Bill Market est une chaîne de supermarchés populaire stratégiquement située au cœur de la commune. L'emplacement de Bill Market se trouve sur la rue principale animée. Cette position centrale rend le supermarché facilement accessible aux habitants locaux ainsi qu'aux navetteurs qui visitent quotidiennement la commune. Grâce à la proximité des transports en commun, tels que les bus et les trains, il est facile de se rendre à Bill Market sans voiture. De plus, il y a suffisamment de places de parking autour du supermarché pour les clients qui viennent en voiture. Les environs de Bill Market sont vivants et animés. La zone est entourée de divers magasins, restaurants et cafés, permettant aux clients de combiner leurs courses avec une journée agréable. Le supermarché lui-même est spacieux et offre une large gamme de produits, des légumes et fruits frais aux charcuteries de haute qualité et aux plats préparés. Le personnel amical est toujours prêt à aider et s'assure que faire ses courses chez Bill Market est une expérience agréable. En bref, l'emplacement de Bill Market sur la rue principale en fait une destination idéale pour quiconque recherche commodité, qualité et un large choix de produits. Que vous souhaitiez faire vos courses rapidement après le travail ou que vous cherchiez une expérience de magasinage complète, Bill Market est l'endroit idéal.";
+    producttitle.innerHTML = "Nos Catégories:";
 });
 
 
@@ -38,4 +41,15 @@ locatie.innerHTML = "Emplacement";
   console.log('taal gekozen')
 })();
 
+let categorie = document.querySelector("#categorie");
+fetch("../javascript/categories.json")
+  .then((response) => response.json())
+  .then((data) => {
+    data.forEach(post => {
+     categorie.insertAdjacentHTML("beforeend", `<li class='product'><img class='pictureprod' src='${post.image}' width='200px'> <br> <br>
+ ${post.prijs} €/Kg  <br>  
+     </li>`);
 
+      
+    });;
+  });

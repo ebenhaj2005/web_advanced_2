@@ -33,6 +33,13 @@
         "productnaam": "Cuisses de poulet",
         "prijs": 2.99
 
+    },
+    {
+        "id": 5,
+        "image": "../images/cuisses.jpg",
+        "productnaam": "Cuisses de poulet",
+        "prijs": 2.99
+
     }
     
 ]

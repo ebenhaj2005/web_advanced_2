@@ -38,8 +38,8 @@ fetch("../javascript/data.json")
   .then((response) => response.json())
   .then((data) => {
     data.forEach(post => {
-     vlees.insertAdjacentHTML("beforeend", `<li class='product'><img class='pictureprod' src='${post.image}' width='500px'> <br> <br>
- ${post.prijs} €/Kg  <br>  ${post.productnaam}
+     vlees.insertAdjacentHTML("beforeend", `<li class='product'><img class='pictureprod' src='${post.image}' width='400px'> <br> <br>
+ ${post.prijs} €/Kg  <br>  
      </li>`);
 
       
