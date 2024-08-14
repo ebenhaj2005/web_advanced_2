@@ -1,0 +1,38 @@
+
+ [
+    {
+        "id": 1,
+        "image": "../images/kipfilet2.png",
+        "productnaam": "Poulet",
+        "prijs": 3.99
+
+    },
+    {
+        "id": 2,
+        "image": "../images/gehakt2.png",
+        "productnaam": "Kefta",
+        "prijs": 2.99
+
+    },
+    {
+        "id": 3,
+        "image": "../images/merguezcurry.jpg",
+        "productnaam": "Merguez Curry",
+        "prijs": 2.99
+
+    },{
+        "id": 4,
+        "image": "../images/saucisse.png",
+        "productnaam": "Merguez",
+        "prijs": 2.99
+
+    },
+    {
+        "id": 5,
+        "image": "../images/cuisses.jpg",
+        "productnaam": "Cuisses de poulet",
+        "prijs": 2.99
+
+    }
+    
+]

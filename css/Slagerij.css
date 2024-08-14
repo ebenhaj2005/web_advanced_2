@@ -25,6 +25,7 @@ margin-top: 50px;
 margin-bottom: 100px;
 overflow: hidden;
 border-radius: 100px;
+border-style:groove;
 }
 .header a{
     text-decoration: none;
@@ -74,9 +75,10 @@ transition-duration: 1000ms;
      margin: 200px;
   background-color: black;
   padding: 50px;
-      margin-bottom: 200px;
+      margin-bottom: 100px;
       border-radius: 40px;
       margin-bottom: 500px;
+      border-style:groove;
   }
 
   #text{
@@ -97,6 +99,7 @@ transition-duration: 1000ms;
    padding-bottom: 40px;
     width: 100%;
     overflow: hidden;
+
     
 
 }
@@ -113,5 +116,42 @@ transition-duration: 1000ms;
     transform: scale(1.2);
     transition-duration: 1000ms;
     cursor: pointer;
+
+}
+
+#vlees{
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+flex-wrap:wrap;
+margin-left: 200px;
+margin-right: 200px;
+margin-bottom: 200px;
+background-color: black;
+padding: 50px;
+border-style:groove;
+border-radius: 60px;
+
+
+}
+.product{
+   font-size: 30px; 
+   list-style-type: none;
+   text-align: center;
+   padding: 10px;
+   margin-bottom: 30px;
+ 
+}
+.pictureprod{
+    border-radius: 20px;
+}
+#producttitle{
+    text-align: center;
+    font-size: 40px;
+   
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;   
+    text-decoration: underline;
 
 }
