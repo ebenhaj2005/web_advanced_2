@@ -1,6 +1,8 @@
 body{
     background-color: rgb(220, 35, 35);
     color: white;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -16,7 +18,7 @@ body{
     justify-content:space-evenly;
  text-decoration: none;
     color: black;
-margin-top: 50px;
+
     padding:40px;
     font-size: 20px;
    
@@ -24,9 +26,7 @@ margin-top: 50px;
    
 margin-bottom: 100px;
 overflow: hidden;
-border-radius: 100px;
-border-style:groove;
-border-color: white;
+
 }
 .header a{
     text-decoration: none;
