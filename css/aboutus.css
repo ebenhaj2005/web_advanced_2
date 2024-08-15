@@ -25,6 +25,8 @@ margin-top: 50px;
 margin-bottom: 20px;
 overflow: hidden;
 border-radius: 100px;
+border-style:groove;
+border-color: white;
 }
 .header a{
     text-decoration: none;

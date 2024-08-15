@@ -1,22 +1,16 @@
+let Naam = document.getElementById("Naam-input");
+let Leeftijd = document.getElementById("leeftijd-input");
+let form = document.getElementById("form");
+let error = document.getElementById("error");
+let User = document.getElementById("userInfo");
 
-
-const kiestaalNL = "nederlands";
-const kiestaalFR = "Français";
-
-
-
-
-
-const Naam = document.getElementById("Naam-input");
-const Leeftijd = document.getElementById("leeftijd-input");
-const form = document.getElementById("form");
-const error = document.getElementById("error");
-const User = document.getElementById("userInfo");
-
-
+function welkom(){
+  alert("Welkom op de website van Bill Market");
+}
+window.addEventListener("load", welkom);
 form.addEventListener("submit", (e) => {
   const msg = ["Gelieve een geldige leeftijd in te vullen", "Gelieve uw leeftijd in te vullen om op de website van Bill Market te komen", "Gelieve uw naam in te vullen om op de website van Bill Market te komen"];
-  const[a,b,c] = msg; // Destructuring
+  const[a,b,c] = msg; 
   let message = [];
   const username = {name: Naam.value};
   const userage= {Age: Leeftijd.value};

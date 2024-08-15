@@ -5,7 +5,6 @@ let slagerijheader = document.getElementById("Slagerijnaam");
 let onsheader = document.getElementById("Onsnaam");
 let locatie = document.getElementById("loc");
 let cattitle = document.getElementById("producttitle");
-
 nederlands.addEventListener("click", function () {
   text.innerHTML = `Bill Market is een populaire supermarktketen die strategisch gelegen is in het hart van de gemeente. De locatie van Bill Market bevindt zich aan de drukke Hoofdstraat. 
     Deze centrale ligging maakt de supermarkt gemakkelijk toegankelijk voor zowel de lokale bewoners als de pendelaars die dagelijks de gemeente bezoeken. Dankzij de nabijheid van openbaar vervoer, zoals bussen en treinen, is het eenvoudig om Bill Market te bereiken zonder auto.

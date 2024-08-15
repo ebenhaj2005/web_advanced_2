@@ -1,28 +1,113 @@
-BILL MARKET WEBSITE
+Bill Market Website
+Dit project is een Bill Market Website waar gebruikers informatie kunnen verkrijgen over de winkel van Bill Market, zoals de openingsuren, het adres, de prijzen van producten, en andere relevante winkelinformatie. Het doel van deze website is om gebruikers snel en eenvoudig toegang te geven tot essentiële informatie over Bill Market.
+Inhoud
+1.	Features
+2.	Technologieën
+3.	Installatie
+4.	Gebruik
+5.	Auteurs
+Features
+De Bill Market Website biedt de volgende functionaliteiten:
+•	Elementen selecteren en manipuleren: In dit project hebben we verschillende elementen van de pagina geselecteerd en gemanipuleerd om dynamisch de inhoud van de website aan te passen. Een specifiek voorbeeld hiervan is de functionaliteit waarmee de gebruiker de taal van de website kan veranderen naar het Nederlands door op een knop te klikken.
+Wanneer de gebruiker op de knop "Nederlands" klikt, wordt de tekst van verschillende elementen op de pagina vertaald naar het Nederlands. Dit wordt bereikt door het gebruik van de getElementById-methode om elementen te selecteren en vervolgens de innerHTML van deze elementen aan te passen.
+Hier is een voorbeeld van de implementatie:
+let nederlands = document.getElementById("Nederlands");
 
-Welcome to the Bill Market website. This website has been made to help clients to find all the information that they need about Bill Market
+nederlands.addEventListener("click", function () {
+  text.innerHTML = `Bill Market is een populaire supermarktketen die strategisch gelegen is in het hart van de gemeente. De locatie van Bill Market bevindt zich aan de drukke Hoofdstraat.` }
+De volledige code kunt u terug vinden in de map => javascript => Main.js => Lijn 1 – 8.
 
 
-Elementen selecteren : Main.js => lijn 1 
-Elementen manipuleren : Main.js => lijn 8 
-Event aan een element koppelen: Main.js => Lijn 7 
-Formulier valideren: 
-Gebruiken van een constante
-Gebruiken van template literals
-Destructuring
-Spread & Rest operator
-Iteration over een array
-Arrow function
-Callback function
-Promise 
-Consumer methods
-Async & Await
-Self executing function
-Fetch om data op te halen
-JSON manipuleren en weergeven
-Basis CSS Animatie
-Gebruiken van een flexbox of CSS grid : Main.css => Lijn 11
-Gebruik van LocalStorage : Main.js => Lijn 11 
+
+
+•	Event handling: Koppelen van gebruikersinteracties, zoals klikken, aan het tonen van specifieke informatie of het uitvoeren van acties.
+Wanneer de gebruiker op de knop "Nederlands" klikt, wordt de tekst van verschillende elementen op de pagina vertaald naar het Nederlands. Dit wordt bereikt door het gebruik van de getElementById-methode om elementen te selecteren en vervolgens de innerHTML van deze elementen aan te passen.
+Hier is een voorbeeld van de implementatie:
+let nederlands = document.getElementById("Nederlands");
+
+De volledige code kunt u terug vinden in de map => javascript => Main.js => Lijn 1 – 8.
+
+
+•	Formulier validatie: In dit project hebben we een formuliervalidatie geïmplementeerd om ervoor te zorgen dat gebruikers geldige informatie invoeren voordat ze toegang krijgen tot de website van Bill Market. De validatie vindt plaats wanneer een gebruiker probeert het formulier te verzenden.
+De validatie wordt uitgevoerd door te controleren of de naam (Naam.value) of leeftijd (Leeftijd.value) leeg zijn of ongeldig (bijvoorbeeld een leeftijd van meer dan 2 cijfers). Als een van deze validaties faalt, wordt het bijbehorende foutbericht toegevoegd aan de message array.
+Als er fouten zijn gevonden, wordt de standaard formulierverzendactie gestopt (e.preventDefault()) en worden de foutberichten weergegeven in een HTML-element genaamd error.
+Als er geen fouten zijn, krijgt de gebruiker een welkomstbericht te zien met hun naam en leeftijd, en wordt hij/zij doorgestuurd naar de hoofdwebsitepagina (Main.html).
+ De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 8 – 40 .
+
+•	Constantes: Gebruik van constante variabelen voor onveranderlijke gegevens.
+We definiëren een constante genaamd msg met het sleutelwoord const. Deze constante slaat een array op die drie stringwaarden bevat. Elke string in de array vertegenwoordigt een foutbericht dat kan worden weergegeven wanneer een gebruiker het formulier niet correct invult.
+Omdat msg een constante is, kan de array zelf niet opnieuw worden toegekend aan een andere waarde.
+De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 9 & 10 .
+•	Template literals: Dynamische opmaak van teksten, zoals begroetingen of informatieberichten, met behulp van template literals.
+De template literal zorgt ervoor dat de alert-functie een bericht toont dat de waarden van userInfo.name en userInfo.Age bevat. Als userInfo.name bijvoorbeeld "John" is en userInfo.Age "30", dan wordt het volgende bericht weergegeven
+
+Welkom John! U bent 30 jaar oud. U wordt doorgestuurd naar de website van Bill Market.
+De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 36 .
+
+
+•	Destructuring: Extractie van gegevens uit objecten. 
+In dit project heb ik destructuring gebruikt om foutmeldingen uit een array toe te wijzen aan afzonderlijke variabelen. Dit maakt het eenvoudiger en overzichtelijker om deze foutmeldingen later te gebruiken bij de validatie van het formulier op de inlogpagina.
+De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 9&10 .
+
+•	Spread & Rest operators: Flexibele verwerking van gegevens. De spread operator wordt gebruikt om de elementen van een array of de eigenschappen van een object uit te spreiden of te kopiëren naar een nieuw object of array. 
+De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 12-14 .
+
+•	Array iteratie:  De forEach methode een handige manier om over de elementen van een array te itereren en een bepaalde actie uit te voeren voor elk element.
+In mijn codevoorbeeld gebruik  ik forEach om een array met openingsuren te verwerken en deze gegevens weer te geven in een HTML-tabel.
+De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 32-42 
+•	Arrow functions: Gebruik van pijlfuncties voor beknopte en leesbare code. Arrow functions maken het mogelijk om functies op een kortere en meer leesbare manier te schrijven. Ze elimineren de noodzaak om het function-sleutelwoord te gebruiken en hebben een meer beknopte syntaxis.
+in mijn codevoorbeeld wordt een arrow function gebruikt om de resultaten van een fetch-aanroep te verwerken en om fouten af te handelen.
+De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 44-50 
+
+•	Callback functies: Verwerken van asynchrone gebeurtenissen.  Een callback functie wordt gebruikt om een stukje code uit te voeren nadat een bepaalde gebeurtenis of actie heeft plaatsgevonden. In mijn voorbeeld wordt een callback functie gebruikt om een welkomstbericht te tonen wanneer de pagina volledig is geladen.
+De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 10. 
+
+•	Promises: Een Promise is een object dat een toekomstige waarde vertegenwoordigt. Deze waarde kan worden verkregen wanneer een asynchrone operatie voltooid is. 
+De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 10
+
+•	Async & Await: Eenvoudige en duidelijke asynchrone code, bijvoorbeeld bij het opvragen van data van een api. async en await worden gebruikt om asynchrone operaties op een meer leesbare en gestructureerde manier uit te voeren.
+De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 84-96 
+
+•	Self-executing functies: Functies die automatisch worden uitgevoerd bij het laden van de pagina. Binnen deze functie bevindt zich de logica om de taal van de website te kiezen op basis van de waarde opgeslagen in localStorage.
+De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 69-76 
+
+•	Fetch: Ophalen van gegevens van een externe API en het gebruiken ervan. In deze code wordt de fetch API gebruikt om grappen op te halen van een externe API, en de opgehaalde grap wordt vervolgens weergegeven op de webpagina.
+De volledige code kunt u terug vinden in de map=>javascript => aboutus.js => Lijn 82-101
+
+•	CSS Animaties: Gebruik van basisanimaties voor het visueel aantrekkelijk maken van de gebruikersinterface. In deze CSS-regel maak je gebruik van basis CSS-animaties om een visueel effect te creëren wanneer de gebruiker met de muis over een h3-element binnen de .header-class beweegt (hover). Door gebruik te maken van transition-property en transition-duration, creëer je een vloeiende overgang wanneer de kleur verandert. Transform:scale(1.5) Dit vergroot het element tot 1,5 keer de oorspronkelijke grootte wanneer de gebruiker eroverheen beweegt.
+De volledige code kunt u terug vinden in de map=>css=> Main.css => Lijn 41-47.
+•	Flexbox: Layout management om ervoor te zorgen dat de website responsief en gebruiksvriendelijk is. In deze CSS-stijl heb ik Flexbox gebruikt om de elementen binnen de .header-container horizontaal uit te lijnen (flex-direction: row) en ze gelijkmatig over de beschikbare ruimte te verdelen (justify-content: space-evenly). Dit zorgt ervoor dat de items binnen .header netjes en consistent worden gepositioneerd, ongeacht de grootte van de container. 
+De volledige code kunt u terug vinden in de map=>css=> Main.css => Lijn 11-13.
+
+•	LocalStorage: Opslaan van voorkeuren . In de gegeven code maak ik gebruik van localStorage om de taalvoorkeur van de gebruiker op te slaan en te onthouden, zodat de website bij het herladen of het opnieuw bezoeken automatisch in de juiste taal wordt weergegeven.
+De volledige code kunt u terug vinden in de map=>javascript=> Main.js => Lijn 8-41.
+•	Consumer Methods: 
+•	JSON manipuleren en weergeven: fetch gebruikt om een JSON-bestand (data.json) op te halen dat zich bevindt in de map ../javascript/. Zet de respons om naar JSON met response.json().Gebruik forEach om door de array van JSON-objecten te itereren. Gebruik insertAdjacentHTML om de data dynamisch in de DOM te plaatsen.
+De volledige code kunt u terug vinden in de map=>javascript=> Slagerij.js => Lijn 37-4.
+
+Technologieën
+Dit project is gebouwd met de volgende technologieën:
+•	HTML
+•	CSS
+•	JavaScript 
+•	Fetch API
+•	JSON
+•	LocalStorage
+Installatie
+Om dit project lokaal te draaien, volg deze stappen:
+1.	Clone de repository:
+bash
+Code kopiëren
+git clone https://github.com/ebenhaj2005/web_advanced_2.git 
+2.	Navigeer naar de projectmap:
+bash
+Code kopiëren
+cd web_advanced_/
+3.	Open login.html in je browser om de website te bekijken.
+Gebruik
+Na het openen van de website kunnen gebruikers navigeren door verschillende secties, zoals de homepage, Slagerij,contact en bedrijfsinformatie. De website biedt een intuïtieve manier om snel alle benodigde informatie over Bill Market te vinden.
+Auteurs
+•	Elias Benhaj - Ontwikkelaar
 
 
 
