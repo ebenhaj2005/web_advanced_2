@@ -71,7 +71,7 @@ De volledige code kunt u terug vinden in de map => javascript => aboutus.js => L
 •	Self-executing functies: Functies die automatisch worden uitgevoerd bij het laden van de pagina. Binnen deze functie bevindt zich de logica om de taal van de website te kiezen op basis van de waarde opgeslagen in localStorage.
 De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 69-76 
 
-•	Fetch: Ophalen van gegevens van een externe API en het gebruiken ervan. In deze code wordt de fetch API gebruikt om grappen op te halen van een externe API, en de opgehaalde grap wordt vervolgens weergegeven op de webpagina.
+•	Fetch: Ophalen van gegevens van een externe API en het gebruiken ervan. In deze code wordt de fetch API gebruikt om grappen op te halen van een externe API, en de opgehaalde grap wordt vervolgens weergegeven op de webpagina. De eerste keer dat je om een grap vraagt duurt het wel eventjes voordat je het effectief te zien krijgt.
 De volledige code kunt u terug vinden in de map=>javascript => aboutus.js => Lijn 82-101
 
 •	CSS Animaties: Gebruik van basisanimaties voor het visueel aantrekkelijk maken van de gebruikersinterface. In deze CSS-regel maak je gebruik van basis CSS-animaties om een visueel effect te creëren wanneer de gebruiker met de muis over een h3-element binnen de .header-class beweegt (hover). Door gebruik te maken van transition-property en transition-duration, creëer je een vloeiende overgang wanneer de kleur verandert. Transform:scale(1.5) Dit vergroot het element tot 1,5 keer de oorspronkelijke grootte wanneer de gebruiker eroverheen beweegt.
@@ -81,7 +81,11 @@ De volledige code kunt u terug vinden in de map=>css=> Main.css => Lijn 11-13.
 
 •	LocalStorage: Opslaan van voorkeuren . In de gegeven code maak ik gebruik van localStorage om de taalvoorkeur van de gebruiker op te slaan en te onthouden, zodat de website bij het herladen of het opnieuw bezoeken automatisch in de juiste taal wordt weergegeven.
 De volledige code kunt u terug vinden in de map=>javascript=> Main.js => Lijn 8-41.
-•	Consumer Methods: 
+
+•	Consumer Methods: .then() is een consumer method van een Promise. Deze methode wordt uitgevoerd wanneer de Promise succesvol is opgelost, dat wil zeggen wanneer het fetch-verzoek voltooid is en er een antwoord is ontvangen.
+In deze .then()-methode wordt de response-parameter, die het antwoord van de server bevat, doorgegeven aan een callback-functie.
+De volledige code kunt u terug vinden in de map=>javascript=> Slagerij.js => Lijn 37-38.
+
 •	JSON manipuleren en weergeven: fetch gebruikt om een JSON-bestand (data.json) op te halen dat zich bevindt in de map ../javascript/. Zet de respons om naar JSON met response.json().Gebruik forEach om door de array van JSON-objecten te itereren. Gebruik insertAdjacentHTML om de data dynamisch in de DOM te plaatsen.
 De volledige code kunt u terug vinden in de map=>javascript=> Slagerij.js => Lijn 37-4.
 

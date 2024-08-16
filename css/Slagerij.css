@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(220, 35, 35);
-    color: white;
+    background-color:  white;
+color: white;
     margin: 0px;
     padding: 0px;
 }
@@ -24,8 +24,7 @@ body{
    
     background-color: rgb(0, 0, 0);
    
-margin-bottom: 100px;
-overflow: hidden;
+
 
 }
 .header a{
@@ -38,8 +37,8 @@ overflow: hidden;
     transition-property: color;
     transition-duration: 0.5s;
     color: red;
-cursor: pointer;
-scale: 1.5;
+    cursor: pointer;
+    scale: 1.5;
 }
 
 #logo_image{
@@ -47,47 +46,57 @@ scale: 1.5;
 }
 
 .banner{
-  
-    display: flex;
-    justify-content: center;
+    background-color: rgb(220, 35, 35);
+    
+    
 
-    margin-bottom: 350px;
+
  
  
 }
-.banner:hover{
+.banner img:hover{
   
     transform:scale(1.2);
 transition-duration: 1000ms;
  
 }
 
-
-
 #bouzzimg{
-    border-radius: 100px;
-   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+border-radius: 20px;
+
+  padding-bottom: 200px;
 }
+
+
 
 .picture-text{
    
     display: flex;
       flex-direction: row;
-     margin: 200px;
+  
   background-color: black;
-  padding: 50px;
+  padding: 100px;
+
       margin-bottom: 100px;
-      border-radius: 40px;
-      margin-bottom: 500px;
-      border-style:groove;
+     
+  }
+  #video-bouzz{
+    margin-left: 200px;
   }
 
   #text{
     font-size: 30px;
-      
+      font-display: flex;
         text-align: center;
-        margin-left: 150px;
-        margin-top: 100px;
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-top: 150px;
+        font-family: 'Times New Roman', Times, serif;
+     
   }
   #footer{
     background-color: black;
@@ -111,6 +120,7 @@ transition-duration: 1000ms;
     justify-content:flex-end;
    margin-right: 50px;
    margin-bottom: 200px;
+   padding-top: 50px;
 }
 
 .app:hover{
@@ -127,35 +137,43 @@ justify-content:space-evenly;
 flex-wrap:wrap;
 padding-left: 100px;
 padding-right: 100px;
+
+
 }
 .product{
-   font-size: 30px; 
+    color: black;
+   font-size: 40px; 
    list-style-type: none;
    text-align: center;
-   padding: 10px;
-   margin-bottom: 30px;
+   padding: 20px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   border: 6px solid black;
+   border-radius: 20px;
+   border-style: groove;
  
 }
 .pictureprod{
     border-radius: 20px;
+    box-shadow: 2px 2px 4px black;
 }
 #producttitle{
+    color: black;
     text-align: center;
     font-size: 40px;
     margin-bottom: 100px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px white;   
+    text-shadow: 2px 2px 4px black;   
     text-decoration: underline;
 
 }
 #categorie-box{
-    background-color: black;
-         border-style:groove;
-         border-radius: 60px;
+  
+   
          margin-left: 200px;
          margin-right: 200px;
          margin-bottom: 200px;
          padding-top: 50px ;
-         border-color: white;
+      
  }
  

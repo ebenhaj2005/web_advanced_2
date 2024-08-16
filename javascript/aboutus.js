@@ -4,7 +4,7 @@ let text = document.getElementById("text-maps");
 let slagerijheader = document.getElementById("Slagerijnaam");
 let onsheader = document.getElementById("Onsnaam");
 let titeltabel = document.getElementById("titeltabel");
-
+let lachen = document.getElementById("lachen");
 
 function fetchopeningsuren() {
   return new Promise((resolve, reject) =>
@@ -53,7 +53,8 @@ nederlands.addEventListener("click", function () {
   onsheader.innerHTML = "Over ons";
   titeltabel.innerHTML = "Openingsuren";
   localStorage.setItem("language", "nederlands");
-  document.getElementById('grapbutton').innerText = "Druk hier voor een grap"
+  document.getElementById('grapbutton').innerText = "Druk hier voor een grap";
+  lachen.innerHTML = "Bij Bill Market, houden we van lachen !"
 
  
 });
@@ -61,9 +62,10 @@ nederlands.addEventListener("click", function () {
 frans.addEventListener("click", function () {
   slagerijheader.innerHTML = "Boucherie";
   onsheader.innerHTML = "A propos de nous";
-  titeltabel.innerHTML = "Heures d'ouverture";
+  titeltabel.innerHTML = "Heures d'ouvertures";
   localStorage.setItem("language", "Français");
-  document.getElementById('grapbutton').innerText = "Appuyez ici pour une blague"
+  document.getElementById('grapbutton').innerText = "Appuyez ici pour une blague";
+  lachen.innerHTML = "Chez Bill Market, nous aimons rire !"
 });
 
 (function kiestaal() {

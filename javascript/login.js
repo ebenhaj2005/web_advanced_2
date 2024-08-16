@@ -22,7 +22,7 @@ form.addEventListener("submit", (e) => {
       c
     );
   }
-  if (Leeftijd.value.length > 2 && Leeftijd.value.length != 0) {
+  if (Leeftijd.value > 100 && Leeftijd.value.length != 0) {
     message.push(a);
   }
   if (Leeftijd.value === "" || Leeftijd.value === null) {
