@@ -14,7 +14,6 @@ let titelpagina = document.getElementById('titelpage');
 
 
 
-let textcontact = document.getElementById('textcontact');
 
 nederlands.addEventListener('click', function() {
     slagerijheader.innerText = "Slagerij";

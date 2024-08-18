@@ -13,7 +13,7 @@ nederlands.addEventListener("click", function () {
     De supermarkt zelf is ruim opgezet en biedt een breed assortiment aan producten, van verse groenten en fruit tot hoogwaardige vleeswaren en kant-en-klaarmaaltijden. Het vriendelijke personeel staat altijd klaar om te helpen en zorgt ervoor dat winkelen bij Bill Market een aangename ervaring is.
     Kortom, de locatie van Bill Market aan de Hoofdstraat maakt het een ideale bestemming voor iedereen die op zoek is naar gemak, kwaliteit en een ruime keuze aan producten. Of je nu snel even boodschappen wilt doen na het werk, of een uitgebreide winkelervaring zoekt,
     bij Bill Market ben je aan het juiste adres.`;
-  slagerijheader.innerHTML = "Slagerij";
+  slagerijheader.innerHTML = "Sla,gerij";
   onsheader.innerHTML = "Over ons";
   localStorage.setItem("language", "nederlands");
   locatie.innerHTML = "Locatie";

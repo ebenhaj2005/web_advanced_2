@@ -45,7 +45,14 @@ cursor: pointer;
 color: rgb(236, 236, 56);
  transform: scale(1.5);
 }
-
+#taal{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+   margin-right: 50px;
+   margin-bottom: 100px;
+ padding-top: 50px;
+}
 #logo_image{
     border-radius: 20px;
 }
@@ -104,13 +111,6 @@ background-color: rgb(255, 217, 0);
     border-radius: 30px;
     margin-left: 5px;
 }
-
-.gpsimg1:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-    transition-duration: 1000ms;
-}
-
 #loc{
     display: flex;
     justify-content: center;
@@ -120,6 +120,13 @@ background-color: rgb(255, 217, 0);
 margin-bottom: 50px;
 text-decoration: underline;
 }
+.gpsimg1:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 1000ms;
+}
+
+
 
 #locationcontainer{
     color: white;
@@ -156,14 +163,7 @@ margin-right: 250px;
     cursor: pointer;
 
 }
-#taal{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-end;
-   margin-right: 50px;
-   margin-bottom: 100px;
- padding-top: 50px;
-}
+
 
 
 #categorie{

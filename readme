@@ -20,44 +20,44 @@ De volledige code kunt u terug vinden in de map => javascript => Main.js => Lijn
 
 
 
-•	Event handling: Koppelen van gebruikersinteracties, zoals klikken, aan het tonen van specifieke informatie of het uitvoeren van acties.
+•	Elementen manipuleren: Koppelen van gebruikersinteracties, zoals klikken, aan het tonen van specifieke informatie of het uitvoeren van acties.
 Wanneer de gebruiker op de knop "Nederlands" klikt, wordt de tekst van verschillende elementen op de pagina vertaald naar het Nederlands. Dit wordt bereikt door het gebruik van de getElementById-methode om elementen te selecteren en vervolgens de innerHTML van deze elementen aan te passen.
 Hier is een voorbeeld van de implementatie:
 let nederlands = document.getElementById("Nederlands");
 
-De volledige code kunt u terug vinden in de map => javascript => Main.js => Lijn 1 – 8.
+De volledige code kunt u terug vinden in de map => javascript => Main.js => Lijn 1 – 21.
 
 
 •	Formulier validatie: In dit project hebben we een formuliervalidatie geïmplementeerd om ervoor te zorgen dat gebruikers geldige informatie invoeren voordat ze toegang krijgen tot de website van Bill Market. De validatie vindt plaats wanneer een gebruiker probeert het formulier te verzenden.
 De validatie wordt uitgevoerd door te controleren of de naam (Naam.value) of leeftijd (Leeftijd.value) leeg zijn of ongeldig (bijvoorbeeld een leeftijd van meer dan 2 cijfers). Als een van deze validaties faalt, wordt het bijbehorende foutbericht toegevoegd aan de message array.
 Als er fouten zijn gevonden, wordt de standaard formulierverzendactie gestopt (e.preventDefault()) en worden de foutberichten weergegeven in een HTML-element genaamd error.
 Als er geen fouten zijn, krijgt de gebruiker een welkomstbericht te zien met hun naam en leeftijd, en wordt hij/zij doorgestuurd naar de hoofdwebsitepagina (Main.html).
- De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 8 – 40 .
+ De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 11 – 43 .
 
 •	Constantes: Gebruik van constante variabelen voor onveranderlijke gegevens.
 We definiëren een constante genaamd msg met het sleutelwoord const. Deze constante slaat een array op die drie stringwaarden bevat. Elke string in de array vertegenwoordigt een foutbericht dat kan worden weergegeven wanneer een gebruiker het formulier niet correct invult.
 Omdat msg een constante is, kan de array zelf niet opnieuw worden toegekend aan een andere waarde.
-De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 9 & 10 .
+De volledige code kunt u terug vinden in de map => javascript => login.js => 12 .
 •	Template literals: Dynamische opmaak van teksten, zoals begroetingen of informatieberichten, met behulp van template literals.
 De template literal zorgt ervoor dat de alert-functie een bericht toont dat de waarden van userInfo.name en userInfo.Age bevat. Als userInfo.name bijvoorbeeld "John" is en userInfo.Age "30", dan wordt het volgende bericht weergegeven
 
 Welkom John! U bent 30 jaar oud. U wordt doorgestuurd naar de website van Bill Market.
-De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 36 .
+De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 39 .
 
 
 •	Destructuring: Extractie van gegevens uit objecten. 
 In dit project heb ik destructuring gebruikt om foutmeldingen uit een array toe te wijzen aan afzonderlijke variabelen. Dit maakt het eenvoudiger en overzichtelijker om deze foutmeldingen later te gebruiken bij de validatie van het formulier op de inlogpagina.
-De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 9&10 .
+De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 12 & 13 .
 
 •	Spread & Rest operators: Flexibele verwerking van gegevens. De spread operator wordt gebruikt om de elementen van een array of de eigenschappen van een object uit te spreiden of te kopiëren naar een nieuw object of array. 
-De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 12-14 .
+De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 15-17 / 38-40 .
 
 •	Array iteratie:  De forEach methode een handige manier om over de elementen van een array te itereren en een bepaalde actie uit te voeren voor elk element.
 In mijn codevoorbeeld gebruik  ik forEach om een array met openingsuren te verwerken en deze gegevens weer te geven in een HTML-tabel.
 De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 32-42 
 •	Arrow functions: Gebruik van pijlfuncties voor beknopte en leesbare code. Arrow functions maken het mogelijk om functies op een kortere en meer leesbare manier te schrijven. Ze elimineren de noodzaak om het function-sleutelwoord te gebruiken en hebben een meer beknopte syntaxis.
 in mijn codevoorbeeld wordt een arrow function gebruikt om de resultaten van een fetch-aanroep te verwerken en om fouten af te handelen.
-De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 44-50 
+De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 45 
 
 •	Callback functies: Verwerken van asynchrone gebeurtenissen.  Een callback functie wordt gebruikt om een stukje code uit te voeren nadat een bepaalde gebeurtenis of actie heeft plaatsgevonden. In mijn voorbeeld wordt een callback functie gebruikt om een welkomstbericht te tonen wanneer de pagina volledig is geladen.
 De volledige code kunt u terug vinden in de map => javascript => login.js => Lijn 10. 
@@ -66,28 +66,28 @@ De volledige code kunt u terug vinden in de map => javascript => login.js => Lij
 De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 10
 
 •	Async & Await: Eenvoudige en duidelijke asynchrone code, bijvoorbeeld bij het opvragen van data van een api. async en await worden gebruikt om asynchrone operaties op een meer leesbare en gestructureerde manier uit te voeren.
-De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 84-96 
+De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 86-102
 
 •	Self-executing functies: Functies die automatisch worden uitgevoerd bij het laden van de pagina. Binnen deze functie bevindt zich de logica om de taal van de website te kiezen op basis van de waarde opgeslagen in localStorage.
-De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 69-76 
+De volledige code kunt u terug vinden in de map => javascript => aboutus.js => Lijn 71-78 
 
 •	Fetch: Ophalen van gegevens van een externe API en het gebruiken ervan. In deze code wordt de fetch API gebruikt om grappen op te halen van een externe API, en de opgehaalde grap wordt vervolgens weergegeven op de webpagina. De eerste keer dat je om een grap vraagt duurt het wel eventjes voordat je het effectief te zien krijgt.
-De volledige code kunt u terug vinden in de map=>javascript => aboutus.js => Lijn 82-101
+De volledige code kunt u terug vinden in de map=>javascript => aboutus.js => Lijn 84-103
 
 •	CSS Animaties: Gebruik van basisanimaties voor het visueel aantrekkelijk maken van de gebruikersinterface. In deze CSS-regel maak je gebruik van basis CSS-animaties om een visueel effect te creëren wanneer de gebruiker met de muis over een h3-element binnen de .header-class beweegt (hover). Door gebruik te maken van transition-property en transition-duration, creëer je een vloeiende overgang wanneer de kleur verandert. Transform:scale(1.5) Dit vergroot het element tot 1,5 keer de oorspronkelijke grootte wanneer de gebruiker eroverheen beweegt.
 De volledige code kunt u terug vinden in de map=>css=> Main.css => Lijn 41-47.
 •	Flexbox: Layout management om ervoor te zorgen dat de website responsief en gebruiksvriendelijk is. In deze CSS-stijl heb ik Flexbox gebruikt om de elementen binnen de .header-container horizontaal uit te lijnen (flex-direction: row) en ze gelijkmatig over de beschikbare ruimte te verdelen (justify-content: space-evenly). Dit zorgt ervoor dat de items binnen .header netjes en consistent worden gepositioneerd, ongeacht de grootte van de container. 
-De volledige code kunt u terug vinden in de map=>css=> Main.css => Lijn 11-13.
+De volledige code kunt u terug vinden in de map=>css=> Main.css => Lijn 13-15.
 
 •	LocalStorage: Opslaan van voorkeuren . In de gegeven code maak ik gebruik van localStorage om de taalvoorkeur van de gebruiker op te slaan en te onthouden, zodat de website bij het herladen of het opnieuw bezoeken automatisch in de juiste taal wordt weergegeven.
-De volledige code kunt u terug vinden in de map=>javascript=> Main.js => Lijn 8-41.
+De volledige code kunt u terug vinden in de map=>javascript=> Main.js => Lijn 18 & 47.
 
 •	Consumer Methods: .then() is een consumer method van een Promise. Deze methode wordt uitgevoerd wanneer de Promise succesvol is opgelost, dat wil zeggen wanneer het fetch-verzoek voltooid is en er een antwoord is ontvangen.
 In deze .then()-methode wordt de response-parameter, die het antwoord van de server bevat, doorgegeven aan een callback-functie.
-De volledige code kunt u terug vinden in de map=>javascript=> Slagerij.js => Lijn 37-38.
+De volledige code kunt u terug vinden in de map=>javascript=> Slagerij.js => Lijn 38-39.
 
 •	JSON manipuleren en weergeven: fetch gebruikt om een JSON-bestand (data.json) op te halen dat zich bevindt in de map ../javascript/. Zet de respons om naar JSON met response.json().Gebruik forEach om door de array van JSON-objecten te itereren. Gebruik insertAdjacentHTML om de data dynamisch in de DOM te plaatsen.
-De volledige code kunt u terug vinden in de map=>javascript=> Slagerij.js => Lijn 37-4.
+De volledige code kunt u terug vinden in de map=>javascript=> Slagerij.js => Lijn 37-47.
 
 Technologieën
 Dit project is gebouwd met de volgende technologieën:
@@ -119,3 +119,5 @@ Sources:
 
 https://rapidapi.com/KegenGuyll/api/dad-jokes/playground/apiendpoint_8a3669ee-772f-42a8-a92c-6ffc33e3152d
 https://chatgpt.com/share/e27f7c0a-44bd-4275-86f6-60eb4a23a224
+https://www.w3schools.com/js/js_json_intro.asp
+

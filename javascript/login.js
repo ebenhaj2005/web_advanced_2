@@ -12,9 +12,9 @@ form.addEventListener("submit", (e) => {
   const msg = ["Gelieve een geldige leeftijd in te vullen", "Gelieve uw leeftijd in te vullen om op de website van Bill Market te komen", "Gelieve uw naam in te vullen om op de website van Bill Market te komen"];
   const[a,b,c] = msg; 
   let message = [];
-  const username = {name: Naam.value};
-  const userage= {Age: Leeftijd.value};
-  const userInfo = {...username, ...userage};
+  let username = {name: Naam.value};
+  let userage= {Age: Leeftijd.value};
+  let userInfo = {...username, ...userage};
   e.preventDefault();
   let naam2 = Naam.value;
   if (naam2 === "" || naam2 === null) {
@@ -35,8 +35,12 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     error.innerText =  message.join(` , ${"\n"}`);
   } else {
+    let aanspreking = ["Mnr.", "Mevr."];
+function hello(...aanspreking){
+  alert(`Welkom ${aanspreking.join(', ')}  ${userInfo.name}! U bent ${userInfo.Age} jaar oud. U wordt doorgestuurd naar de website van Bill Market.`);
+}
+hello(...aanspreking);
 
-alert(`Welkom ${userInfo.name}! U bent ${userInfo.Age} jaar oud. U wordt doorgestuurd naar de website van Bill Market.`);
     window.location.href = "../html/Main.html";
     
   }

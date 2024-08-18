@@ -62,22 +62,7 @@ scale: 1.5;
 
 
 
-#infopicture{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    margin-top: 200px;
-    margin-bottom: 150px;
-    
 
-}
-
-#title{
-    text-transform: uppercase;
-    font-size: 30px;
-    padding-bottom: 50px;
-
-}
 #taal{
     display: flex;
     flex-direction: row;
