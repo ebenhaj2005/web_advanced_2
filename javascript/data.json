@@ -33,6 +33,11 @@
         "productnaam": "Cuisses de poulet",
         "prijs": 2.99
 
+    },{
+      "id": 6,
+        "image": "../images/kipfilet2.png",
+        "productnaam": "Kipfilet",
+        "prijs": 6
     }
     
 ]
